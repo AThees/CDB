@@ -1,0 +1,105 @@
+.titulo-nome {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+}
+
+.conteudo-individual {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.conteudo-individual {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+        "texto foto"
+        "titulo-mapa titulo-mapa"
+        "mapa mapa"
+    ;
+    gap: 0.5rem;
+}
+
+.conteudo-individual__sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "sobre-texto hobbies"
+        "caracteristicas redes"
+    ;
+    gap: 3rem;
+    align-items: center;
+}
+
+.conteudo-individual__sobre__texto{
+    grid-area: sobre-texto;
+}
+
+.conteudo-individual__sobre__hobbies{
+    grid-area: hobbies;
+    list-style-type: circle;
+}
+
+.conteudo-individual__sobre__caracteristicas{
+    grid-area: caracteristicas;
+}
+
+.conteudo-individual__sobre__titulo{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.caracteristicas__item {
+    font-weight: bold;
+    line-height: 1.5rem;
+}
+
+.conteudo-individual__sobre__redes-sociais{
+    grid-area: redes;
+}
+
+.instagram::before{
+    content: url('/assets/img/icons8-instagram.svg');
+}
+
+.redes-sociais__item{
+    text-decoration: none;
+}
+
+.link{
+    color:black;
+}
+
+.link:visited{
+    color:black;
+}
+
+.link:hover{
+    color: #1d1c1c70;
+}
+
+.conteudo-individual__titulo-mapa{
+    grid-area: titulo-mapa;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.conteudo-individual__mapa{
+    grid-area: mapa;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.conteudo-individual__foto--Tomas {
+    grid-area: foto;
+    height: 600px;
+    width: 336.94px;
+}
+
